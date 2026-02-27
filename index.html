@@ -545,17 +545,13 @@
     resize: vertical;
 }
 </style>
-<form id="main-contact-form" name="contact-form" data-request="Form::onSend" data-request-success="alert('Mensagem enviada com sucesso!')">
+<form id="main-contact-form" name="contact-form" data-request="Form::onSend" data-request-url="https://formspree.io/f/xaqdvvol" data-request-success="alert('Mensagem enviada com sucesso!')">
     <fieldset>
-        <div class="form-group">
-            <input id="textNome" class="form-control" name="nome" placeholder="Name" data-i18n-placeholder="namePlaceholder" type="text">
-        </div>
-        
         <div class="form-group">
             <input id="inputEmail" class="form-control" name="email" placeholder="E-mail" data-i18n-placeholder="emailPlaceholder" type="email">
         </div>
         <div class="form-group">
-            <textarea class="form-control field-textarea" name="msg" placeholder="Message" data-i18n-placeholder="messagePlaceholder" rows="10" style="min-height: 102px;"></textarea>
+            <textarea class="form-control field-textarea" name="message" placeholder="Message" data-i18n-placeholder="messagePlaceholder" rows="10" style="min-height: 102px;"></textarea>
             <button type="submit" class="btn btn-primary btn-sm pull-right"><i class="fa fa-check-square-o"></i><span data-i18n="sendButton">Send</span></button>
         </div>
     </fieldset>
