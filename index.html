@@ -602,6 +602,14 @@
     $(this).html('<span class="first-word">' + word.substring(0, index) + '</span>' + word.substring(index, word.length));
 });
         </script>
+			<script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('retorno') === 'ok') {
+      alert('Success!');
+    }
+  })();
+</script>
         <script>
         (function () {
           const translations = {
